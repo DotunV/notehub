@@ -1,6 +1,7 @@
-import 'package:appwrite/appwrite.dart';
-import 'package:appwrite/models.dart' as models;
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
+import 'package:notehub/pages/home_page.dart';
 
 void main() {
   runApp(NoteHubApp());
@@ -11,6 +12,13 @@ class NoteHubApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      title: 'Notehub',
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.white,
+        primaryColor: Colors.blue,
+      ),
+      home: HomePage(),
+    );
   }
 }
