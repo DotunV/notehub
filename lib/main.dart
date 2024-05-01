@@ -13,6 +13,7 @@ class NoteHubApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Notehub',
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
