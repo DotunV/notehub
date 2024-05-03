@@ -16,8 +16,21 @@ class NoteHubApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Notehub',
       theme: ThemeData(
+        primarySwatch: Colors.blueGrey,
         scaffoldBackgroundColor: Colors.white,
-        primaryColor: Colors.blue,
+        appBarTheme: AppBarTheme(
+            color: Colors.white,
+            elevation: 1,
+            iconTheme: IconThemeData(color: Colors.black87),
+            titleTextStyle: TextStyle(fontSize: 20),
+            titleSpacing: 20.0),
+        floatingActionButtonTheme:
+            FloatingActionButtonThemeData(backgroundColor: Colors.blue),
+        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          selectedItemColor: Colors.blue,
+          unselectedItemColor: Colors.grey,
+        ),
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(),
     );
